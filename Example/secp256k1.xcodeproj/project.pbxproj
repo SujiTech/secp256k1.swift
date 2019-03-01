@@ -268,7 +268,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -277,7 +277,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-secp256k1_Example/Pods-secp256k1_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A27FA84C0A2E19534EC3811E /* [CP] Embed Pods Frameworks */ = {
@@ -286,7 +286,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -297,7 +297,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-secp256k1_Tests/Pods-secp256k1_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B2BD5E4C789A15C45E92AC77 /* [CP] Check Pods Manifest.lock */ = {

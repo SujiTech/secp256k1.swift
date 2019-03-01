@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'secp256k1.swift'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'secp256k1 bindings for swift. Cocoapods, Carthage and SPM support. Linux support.'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,8 @@ Bitcoin, Ethereum and many other Cryptocurrency Signature generation and verific
   s.pod_target_xcconfig = {
     'SWIFT_INCLUDE_PATHS' => '${PODS_ROOT}',
     'OTHER_CFLAGS' => '-DHAVE_CONFIG_H=1 -pedantic -Wall -Wextra -Wcast-align -Wnested-externs -Wshadow -Wstrict-prototypes -Wno-shorten-64-to-32 -Wno-conditional-uninitialized -Wno-unused-function -Wno-long-long -Wno-overlength-strings -O3',
-    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/secp256k1/Classes"'
+    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/secp256k1/Classes"',
+    'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) ENABLE_MODULE_ECDH=1'
   }
 
   s.source_files = 'secp256k1/Classes/secp256k1/{src,include,contrib}/*.{h,c}', 'secp256k1/Classes/secp256k1/src/modules/{recovery,ecdh}/*.{h,c}', 'secp256k1/Classes/secp256k1-config.h', 'secp256k1/Classes/secp256k1_main.h', 'secp256k1/Classes/secp256k1_ec_mult_static_context.h'
